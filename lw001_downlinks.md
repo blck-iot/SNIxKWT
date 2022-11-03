@@ -1,5 +1,8 @@
 # Moko LW001-BG PRO
 
+### Port
+
+Send downlinks via port **10**
 
 ### Additional Remarks
 **Working Modes**
