@@ -20,6 +20,9 @@
 
 ## LW001 Configuration
 
+![MOKO LW001 - cow monitoring (1)](https://user-images.githubusercontent.com/42295932/199709013-d2326e8a-cf07-48ae-bb7c-43d7e3daba13.jpg)
+
+
 Conf working mode:
 
 > Motion
