@@ -19,7 +19,7 @@ With images beeing analysed on devices and only resulting data beeing send to cl
 
 We trained a simple image classification model to identify lions, hyenas, zebras and some more examples.
 
-#### Go to [Arduino Library](https://github.com/user/repo/blob/branch/other_file.md)
+#### Go to [Arduino Library](https://github.com/blck-iot/SNIxKWT/tree/main/Edge%20AI/wildlife-1_inferencing)
 
 #### Test the model with your phone:
 
