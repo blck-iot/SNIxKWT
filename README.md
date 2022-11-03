@@ -10,36 +10,9 @@
 2. What technologies might we use to incentivize nature stewards for their conservation efforts?
 3. Can new, emerging technologies be in true service to indigenous communities' cohabitation with wildlife?
 
-### Judging Criteria Conflict Mitigation
-
-**1. Originality**
-**2. Holistic Thinking**
-**3. Theme Adherence**
-**4. Utility**
-**5. Collaborative Approach**
-**6. Longterm Viability**
-
 ### Technology used by BLCK
 
 - LoraWan (needs to be defined)
 - Helium Network
 - GPS Tracker, connected to LoraWan
 - Bluetooth Beacons (iBeacon)
-
-
-
-## To-Do
-
-- [ ] Can we integrate Shamba Networks?
-- [ ] Ocean Protocol, publish Datase
-- [ ] ESRI, use ArcGIS online
-
-## Difficulties
-
-**Sending Payloads to Sensor**
-
-It's currently only done via Helium Console. Maybe setting up a dashboard in
-Tago to fast submit changes. This might be on the other hand unecessary work
-and won't move the project forward. 
-
-

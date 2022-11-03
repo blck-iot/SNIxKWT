@@ -131,4 +131,5 @@ dmypy.json
 #internal files
 .gdraw
 
-/internal
+/BLCK internal
+/Hackathon Data
