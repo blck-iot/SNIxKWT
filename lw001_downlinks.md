@@ -1,16 +1,19 @@
 # Moko LW001-BG PRO
 
 
-### Additional Remarkss
-l
+### Additional Remarks
+**Working Modes**
 01 means standby mode
 02 means periodic mode
 03 means timing mode
 04 means motion mode
 
-Convert to binary. Bit 0 refers low Power Prompt Setting value, 0 means 5%, 1 means 10%; Bit 1 refers
-function switch of low power payload, 0 means didn’t send low power payload, 1 means send low power payload
-
+**Location Fix**
+Convert to binary
+Bit 0 refers WIFI fix
+Bit 1 refers Bluetooth fix
+Bit 2 refers GPS fix
+*If the value is 0, it means off; if the value is 1, it means on*
 
 
 ### Downlink Commands
@@ -23,12 +26,12 @@ function switch of low power payload, 0 means didn’t send low power payload, 1
 | Heartbeat Interval               | 02  | 05          | 08 | 00000258         | 02050800000258         | Range: 300 ~ 86400s.               |
 | Off by magnet                    | 02  | 02          | 09 | 01               | 02020901               |                                    |
 | Switch Offline Fix               | 02  | 02          | 0B | 01               | 02020B01               |                                    |
-| Low Power Settings               | 02  | 02          | 0C | 01               | 02020C01               | Convert to binary. Bit 0 refers low Power Prompt Setting value, 0 means 5%, 1 means 10%; Bit 1 refers function switch of low power payload, 0 means didn’t send low power payload, 1 means send low power payload                                  |
+| Low Power Settings               | 02  | 02          | 0C | 01               | 02020C01               | *Convert to binary. Bit 0 refers low Power Prompt Setting value, 0 means 5%, 1 means 10%; Bit 1 refers function switch of low power payload, 0 means didn’t send low power payload, 1 means send low power payload*                                 |
 | Led indicator                    |     |             |    |                  |                        |                                    |
 | Strategy for periodic            | 02  | 02          | 20 | 02               | 02022002               | bluetooth, binary                  |
 | Interval for periodic            | 02  | 05          | 21 | 000003E3         | 020521000003E3         | 1000s                              |
 | Strategy for timing mode         | 02  | 02          | 22 | 04               | 02022204               | 100 -> GPS, binary                 |
-| Timing point of timing mode      | 02  | 03          | 23 | 0103             | 0203230103             | 00:15 and 00:45                    |
+| Timing point of timing mode      | 02  | 03          | 23 | 0103             | 0203230103             | 00:15 and 00:45 - *Convert to decimal, the unit is 15mins. 01 means 00:15; 02 means 00:30; 03 means 00:45...; Maximum 10 report timing points can be set*                  |
 | Motion mode settings             | 02  | 02          | 24 | 19               | 02022419               |                                    |
 | Configure number of fix on start | 02  | 02          | 25 | 02               | 02022502               | 2 times, convert decimals, 1 - 255 |
 | Position Strategy on start       | 02  | 02          | 26 | 02               | 02022602               | BLE, binary                        |
@@ -43,11 +46,11 @@ function switch of low power payload, 0 means didn’t send low power payload, 1
 | Number of devices BLE fix        | 02  | 02          | 33 | 01               | 02023301               | decomals, number                   |
 | Relation Filter A & B            | 02  | 02          | 34 | 01               | 02023401               | 00 OR 01 AND                       |
 | Switch state Filter A            | 02  | 02          | 35 | 00               | 02023500               | 00 off 01                          |
-| ADV Filter A                     | 02  | 02-31       | 36 | 016D6F6B6F       | 0202-3136016D6F6B6F    | moko                               |
+| ADV Filter A                     | 02  | 02-31       | 36 | 016D6F6B6F       | 0202-3136016D6F6B6F    | *Send: 02 06 36 01 6D 6F 6B 6F (The 1st byte of Command DATA is the filter flag, 00 means off, 01 means Positive filter, 02 means Reverse filter. The rest content of Command DATA is the filter content, convert to ASCII. The ADV name filter content of Filter Condition A is moko)* moko                               |
 | Major Filter A                   | 02  | 6           | 38 | 010001000A       | 02638010001000A        |                                    |
 | Minor Filter A                   | 02  | 6           | 39 | 010001000A       | 02639010001000A        |                                    |
 | Raw data filter                  |     |             |    |                  |                        |                                    |
-| UUID Filter A                    | 02  | 2-18        | 3B | 000500           | 022-183B000500         |                                    |
+| UUID Filter A                    | 02  | 2-18        | 3B | 000500           |022-183B000500         | *(The 1st byte of Command DATA is the filter flag, 00 means off, 01 means Positive filter, 02 means Reverse filter. The rest content of Command DATA is the filter content. The UUID filter content of Filter*                                   |
 | RSSI Filter A                    | 02  | 02          | 3C | C0               | 02023CC0               | \-64dBm                            |
 | Switch Filter B                  | 02  | 02          | 3E | 00               | 02023E00               |                                    |
 | ADV Filter B                     | 02  | 02-31       | 3F | 016D6F6B6F       | 0202-313F016D6F6B6F    |                                    |
