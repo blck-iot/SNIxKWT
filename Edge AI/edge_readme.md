@@ -28,6 +28,6 @@ We trained a simple image classification model to identify lions, hyenas, zebras
 
 ## Next Steps
 
-[ ] Create object detection model
-[ ] Train/Test in real environment with mobile phones
-[ ] Deploy first test sensor [SenseCapA1101](https://www.seeedstudio.com/SenseCAP-A1101-LoRaWAN-Vision-AI-Sensor-p-5367.html)
+[ ] Create object detection model  
+[ ] Train/Test in real environment with mobile phones  
+[ ] Deploy first test sensor [SenseCapA1101](https://www.seeedstudio.com/SenseCAP-A1101-LoRaWAN-Vision-AI-Sensor-p-5367.html)  
