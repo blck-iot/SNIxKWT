@@ -19,8 +19,15 @@ With images beeing analysed on devices and only resulting data beeing send to cl
 
 We trained a simple image classification model to identify lions, hyenas, zebras and some more examples.
 
-#### [Arduino Library](https://github.com/user/repo/blob/branch/other_file.md)
+#### Go to [Arduino Library](https://github.com/user/repo/blob/branch/other_file.md)
 
-#### Test the model with your phone
+#### Test the model with your phone:
 
-<img width="159" alt="CleanShot 2022-11-03 at 10 12 19@1x" src="https://user-images.githubusercontent.com/42295932/199683881-3b0288b6-3284-402c-9eeb-755382e3ac04.png">
+<img width="159" alt="QR Code to run model on phone" src="https://user-images.githubusercontent.com/42295932/199683881-3b0288b6-3284-402c-9eeb-755382e3ac04.png">
+
+
+## Next Steps
+
+[ ] Create object detection model
+[ ] Train/Test in real environment with mobile phones
+[ ] Deploy first test sensor [SenseCapA1101](https://www.seeedstudio.com/SenseCAP-A1101-LoRaWAN-Vision-AI-Sensor-p-5367.html)
