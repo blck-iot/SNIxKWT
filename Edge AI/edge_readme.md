@@ -21,3 +21,5 @@ We trained a simple image classification model to identify lions, hyenas, zebras
 
 [Arduino Library](https://github.com/user/repo/blob/branch/other_file.md)
 
+### Test the model with your phone
+
