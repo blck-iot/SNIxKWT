@@ -1,14 +1,29 @@
-## Downlink to setup Moko
+# Moko LW001-BG PRO
 
-| Configure Command                | CMD | Len (Bytes) | ID | Example          | Send                   | Remark                             |
-| -------------------------------- | --- | ----------- | -- | ---------------- | ---------------------- | ---------------------------------- |
+
+### Additional Remarkss
+l
+01 means standby mode
+02 means periodic mode
+03 means timing mode
+04 means motion mode
+
+Convert to binary. Bit 0 refers low Power Prompt Setting value, 0 means 5%, 1 means 10%; Bit 1 refers
+function switch of low power payload, 0 means didn’t send low power payload, 1 means send low power payload
+
+
+
+### Downlink Commands
+
+| Configure Command                | CMD | Len (Bytes) | ID | Example          | Send                   | Remark                                                      |
+| -------------------------------- | --- | ----------- | -- | ---------------- | ---------------------- | ----------------------------------------------------------- |
 | Time Zone                        | 02  | 02          | 04 | 09               | 02020409               | signed number 09 = UTC + 8         |
 | Set Password                     | 02  | 09          | 05 | 4D6F6B6F34333231 | 0209054D6F6B6F34333231 | Moko4321                           |
 | Working mode                     | 02  | 02          | 06 | 04               | 02020604               |                                    |
 | Heartbeat Interval               | 02  | 05          | 08 | 00000258         | 02050800000258         | Range: 300 ~ 86400s.               |
 | Off by magnet                    | 02  | 02          | 09 | 01               | 02020901               |                                    |
 | Switch Offline Fix               | 02  | 02          | 0B | 01               | 02020B01               |                                    |
-| Low Power Settings               | 02  | 02          | 0C | 01               | 02020C01               |                                    |
+| Low Power Settings               | 02  | 02          | 0C | 01               | 02020C01               | Convert to binary. Bit 0 refers low Power Prompt Setting value, 0 means 5%, 1 means 10%; Bit 1 refers function switch of low power payload, 0 means didn’t send low power payload, 1 means send low power payload                                  |
 | Led indicator                    |     |             |    |                  |                        |                                    |
 | Strategy for periodic            | 02  | 02          | 20 | 02               | 02022002               | bluetooth, binary                  |
 | Interval for periodic            | 02  | 05          | 21 | 000003E3         | 020521000003E3         | 1000s                              |
