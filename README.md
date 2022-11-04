@@ -22,6 +22,52 @@
 ![MOKO LW001 - cow monitoring](https://user-images.githubusercontent.com/42295932/200038420-5bdc0232-f19d-4431-8e6f-d5a258a1752d.png)
 _Schema Moko LW001 States & Payloads_
 
+### Working Modes
+
+The Moko LW001 has three different working modes:
+
+_a) Periodic_ 
+_b) Intervall_ 
+_c) Motion_
+
+Most economic for battery life is the motion mode, which uses the integrated acceleration sensor to switch between states.
+
+_I) Stationary_ 
+_II) Start moving_ 
+_III) In movement_ 
+_IV) End movement_
+
+### Triggers
+
+Triggers that change states:
+
+_1) Wakeup Threshold_
+_2) Wakeup Duration_ 
+_3) Motion Threshold_ 
+_4) Motion Duration_  
+
+Criteria **1) & 2)** have to be met to change from state **I) to II)**.  
+**3) & 4)** has to be met to change state from **II) to III)**. 
+If they are not met anymore state will change from **III) to IV)**.
+
+## Payloads
+
+Payloads are small byte-size data packets sent from the tracker.
+Helium is at this point only accepting Class A sensors. Class A sensor can send Payloads and are listening for a short period for an answer. This saves battery life, but has the downside that one can not just send commands.
+A workaround are **"Heartbeats".**. The sensor is sending in defined intervalls small payloads and makes it possible to send Downlink commands.
+
+## Location Fix
+
+The LW001 can use three different ways to define its location.
+
+A) GPS B) WiFi C) BLE
+
+Lokalization via GPS should not require further explanation. Here we use it while the Cow is moving.  
+The tracker can listen SSID's of WiFi networks or UUID's of buethooth beacons. If the location of beacon or Wifi Hotspots is know, one can calculate the Trackers location. 
+
+
+We turned this concept around. Assuming that:
+>**IF** the tracker can *hear* a beacon and this beacon is e.g. attached to a lions collar **THEN** the lion must be within a radius around the tracker.
 
 
 
