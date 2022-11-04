@@ -12,10 +12,10 @@
 
 ### Technology used by BLCK
 
-- LoraWan (needs to be defined)
+- Lora
 - Helium Network
-- GPS Tracker, connected to LoraWan
-- Bluetooth Beacons (iBeacon)
+- GPS Tracker
+- Bluetooth Beacons
 
 ## HELIUM - The People's Network
 
@@ -27,9 +27,10 @@ LoRaWAN is a low-power, wide area networking protocol built on top of the LoRa r
 
 ### Why Helium?
 
-Crypto intensivized network with almost 1.Mio Gateways worldwide. Costs of gateway can "can be earned back (missing the workd" through PoC rewards. LNS managed by Helium Foundation.
+Crypto intensivized network with almost 1.Mio Gateways worldwide. Costs of gateway can "can be earned back (missing the word)" through PoC (Proof of Coverage) rewards and DC (Data Credits) consumption. 
+LNS managed by Helium Foundation. End-Nodes can be integrated in minutes.
 
-Deployed infrastructure can be used by other projects. 
+>Deployed infrastructure can be used permissionless by other projects. 
 
 
 
@@ -151,4 +152,47 @@ Strategy on end:
 >02022C02
 
 
+## Helium Console
+
+### Register Sensor
+
+### Payload Decoder
+
+### Integration 
+
+
+## TAGOio
+
+### Dashbaord
+
+### Analysis
+
+### Alerts
+
+
+## Conclusion
+
+### Limitation
+
+### Next Steps
+
+### StreamR (MQTT)
+
+### More sensors
+
+#### Vision AI
+
+#### Audio Sensors
+
+## Vision
+
+### Carbon Credits
+
+#### DMRV
+
+#### Grazing Strategies
+
+#### Weather Data
+
+#### Data Unions
 
