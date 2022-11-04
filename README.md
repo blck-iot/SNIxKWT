@@ -19,7 +19,7 @@
 
 ## Concept of GPS Tracker & iBeacon
 
-![MOKO LW001 - cow monitoring (2)](https://user-images.githubusercontent.com/42295932/200037171-02ec999c-e195-4639-ac03-208fa5ff527d.jpg)
+![MOKO LW001 - cow monitoring](https://user-images.githubusercontent.com/42295932/200038420-5bdc0232-f19d-4431-8e6f-d5a258a1752d.png)
 _Schema Moko LW001 States & Payloads_
 
 
