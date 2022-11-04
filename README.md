@@ -17,6 +17,22 @@
 - GPS Tracker, connected to LoraWan
 - Bluetooth Beacons (iBeacon)
 
+## HELIUM - The People's Network
+
+### [Helium explained in under 4 Minutes - Video](https://www.youtube.com/watch?v=dOFWZZ58UYs)
+
+### LoRaWAN
+
+LoRaWAN is a low-power, wide area networking protocol built on top of the LoRa radio modulation technique. It wirelessly connects devices to the internet and manages communication between end-node devices and network gateways.
+
+### Why Helium?
+
+Crypto intensivized network with almost 1.Mio Gateways worldwide. Costs of gateway can "can be earned back (missing the workd" through PoC rewards. LNS managed by Helium Foundation.
+
+Deployed infrastructure can be used by other projects. 
+
+
+
 ## Concept of GPS Tracker & iBeacon
 
 ![MOKO LW001 - cow monitoring](https://user-images.githubusercontent.com/42295932/200038420-5bdc0232-f19d-4431-8e6f-d5a258a1752d.png)
@@ -54,13 +70,13 @@ If they are not met anymore state will change from **III) to IV)**.
 
 Payloads are small byte-size data packets sent from the tracker.
 Helium is at this point only accepting Class A sensors. Class A sensor can send Payloads and are listening for a short period for an answer. This saves battery life, but has the downside that one can not just send commands.
-A workaround are **"Heartbeats".**. The sensor is sending in defined intervalls small payloads and makes it possible to send Downlink commands.
+A workaround are **"Heartbeats"**. The sensor is sending in defined intervalls small payloads and makes it possible to send Downlink commands.
 
 ## Location Fix
 
 The LW001 can use three different ways to define its location.
 
-A) GPS B) WiFi C) BLE
+_A) GPS B) WiFi C) BLE_
 
 Lokalization via GPS should not require further explanation. Here we use it while the Cow is moving.  
 The tracker can listen SSID's of WiFi networks or UUID's of buethooth beacons. If the location of beacon or Wifi Hotspots is know, one can calculate the Trackers location. 
@@ -68,6 +84,9 @@ The tracker can listen SSID's of WiFi networks or UUID's of buethooth beacons. I
 
 We turned this concept around. Assuming that:
 >**IF** the tracker can *hear* a beacon and this beacon is e.g. attached to a lions collar **THEN** the lion must be within a radius around the tracker.
+
+Changing its state from III) to IV) the tracker is "checking for lion presence" three times in an 1000 sec interval. 
+
 
 
 
