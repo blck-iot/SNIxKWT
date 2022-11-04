@@ -17,10 +17,15 @@
 - GPS Tracker, connected to LoraWan
 - Bluetooth Beacons (iBeacon)
 
+## Concept of GPS Tracker & iBeacon
+
+![MOKO LW001 - cow monitoring (2)](https://user-images.githubusercontent.com/42295932/200037171-02ec999c-e195-4639-ac03-208fa5ff527d.jpg)
+
+
 
 ## LW001 Configuration
 
-![MOKO LW001 - cow monitoring (1)](https://user-images.githubusercontent.com/42295932/199709013-d2326e8a-cf07-48ae-bb7c-43d7e3daba13.jpg)
+
 
 
 Conf working mode:
