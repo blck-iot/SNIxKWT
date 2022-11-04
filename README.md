@@ -25,22 +25,22 @@
 
 Conf working mode:
 
-> Motion
+> Motion  
 > 02020604
 
 Heartbeat Interval:
-> 600 sec
+> 600 sec  
 > 02050800000258
 
 Motion Mode Setting:
 
-> 0 = OFF 1 = ON
-> Bit 0 = Notify on start
-> Bit 1 = Fix on start
-> Bit 2 = Notify on trip
-> Bit 3 = Fix on trip
-> Bit 4 = Notify on end
-> Bit 5 = Fix on end
+> 0 = OFF 1 = ON  
+> Bit 0 = Notify on start  
+> Bit 1 = Fix on start  
+> Bit 2 = Notify on trip  
+> Bit 3 = Fix on trip  
+> Bit 4 = Notify on end  
+> Bit 5 = Fix on end  
 >
 > 110111 -> to decimal
 >
@@ -48,21 +48,21 @@ Motion Mode Setting:
 
 Fix on start:
 
->GPS  
+>GPS    
 >02022601
 
 Amount fix start:
 
->Once
+>Once  
 >02022601
 
 Interval on trip:
 
->1000 sec
+>1000 sec  
 >020527000003E8
 
 Strategy during trip:
->GPS
+>GPS  
 >02022801
 
 Amount fix on end
