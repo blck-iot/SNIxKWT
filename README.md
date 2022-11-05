@@ -218,15 +218,28 @@ Also unexperienced users can create geofences.
 Events such as a cow entering a previously defined are or leaving it can trigger alerts, but also lion-beacons registered by the tracker.
 The alert can be an e-mail or SMS, but we were also thinking on LoRaWAN downlinks. We learned, that often children help their parents by herding the cows or simply a herder would not posses a mobile phone. 
 
-We can use a LoRaWan-Based panic button. If an alert is trigger it would send a signal to the panic button which would in response start to vibrate. 
+We can use a LoRaWan-Based panic button. If an alert is trigger it would send a signal to the panic button which would in response start to vibrate.
 
-<img width="200" alt="Moko LW004" src="https://user-images.githubusercontent.com/42295932/200124235-3e8cecdc-cd10-4222-82a4-174c36f142fb.png">
+This is an inexpensive solution with a low entry barrier. 
+Such panic buttons have a battery life of a couple of months and are re-chargable. 
+
+<img width="250" alt="Moko LW004" src="https://user-images.githubusercontent.com/42295932/200124235-3e8cecdc-cd10-4222-82a4-174c36f142fb.png">
 
 
 
 ## Conclusion
 
+We can use Helium to build a LoRaWan Network in the Masaai Mara National Reserve and its bordering conservacies. During the last weeks and our conversations with KWT or SNI representatives but als other teams, we realised that there are many other possible applicatons besides our inital idea of tracking lions with GPS.
+
+It was not necessary to reinvent the wheel, most of the things we need existed already, needed maybe a little adjustment and were ready to implement. 
+
+Tracking lions and/or cows with GPS could be just the beginning. We are now able to bring IoT to the Wild and create digitals twins of the Mara and its stakeholders. 
+
 ### Limitation
+
+We also learned that it is not as simple as we sometimes prototype solutions on our screen. It is not possible to collar every single lion and we can not easily change batteries. 
+
+Prediction models could be one solution, if we collect enough data from lion movements. Another approach could be Vision or Audio Sensors.
 
 ### Next Steps
 
