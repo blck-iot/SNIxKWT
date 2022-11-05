@@ -235,17 +235,17 @@ Such panic buttons have a battery life of a couple of months and are re-chargabl
 
 ## Conclusion
 
-We can use Helium to build a LoRaWan Network in the Masaai Mara National Reserve and its bordering conservacies. During the last weeks and our conversations with KWT or SNI representatives but als other teams, we realised that there are many other possible applicatons besides our inital idea of tracking lions with GPS.
+We can use Helium to build a LoRaWan Network in the Masaai Mara National Reserve and its neighbouring conservacies.After meeting with SNI, KWT and our fellow hackathon paarticipants, we realised that there is a multitude of other possible applicatonin addition to our idea of tracking lions with GPS.
 
-It was not necessary to reinvent the wheel, most of the things we need existed already, needed maybe a little adjustment and were ready to implement. 
+It was not necessary to reinvent the wheel as most of the things we need existed already, what would be necessary is slight adjustments and we'd be ready to implement. 
 
-Tracking lions and/or cows with GPS could be just the beginning. We are now able to bring IoT to the Wild and create digitals twins of the Mara and its stakeholders. 
+Tracking lions and/or cows with GPS could be just the first step in our journey in bringing IoT to the Wild. 
 
 ### Limitation
 
-We also learned that it is not as simple as we sometimes prototype solutions on our screen. It is not possible to collar every single lion and we can not easily change batteries. 
+We learned that it is not as simple as we sometimes prototype solutions on our screen. It is not feasibly possible to collar every single lion and conduct any further maaintenance on the trackers. 
 
-Prediction models could be one solution, if we collect enough data from lion movements. Another approach could be Vision or Audio Sensors.
+Prediction models could be one solution, if we collect enough data from lion movements which could be supplimented by or substituted with Vision or Audio Sensors.
 
 ### Next Steps
 
