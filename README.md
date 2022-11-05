@@ -91,7 +91,7 @@ Changing its state from III) to IV) the tracker is "checking for lion presence" 
 
 
 
-## LW001 Configuration
+## LW001 Configuration (Step 1)
 
 
 
@@ -150,6 +150,12 @@ Interval on end:
 Strategy on end: 
 >BLE 
 >02022C02
+
+## Lion Detection
+
+
+
+## LW001 Configuration (Step 2) 
 
 
 ## Helium Console 
