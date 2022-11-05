@@ -177,6 +177,11 @@ About 20 minutes after registration, the respective sensor can be switched on. T
 
 ### Payload Decoder
 
+LoRaWAN tries to send as few bytes as possible over the air. Therefore, sensor data is not transmitted in plain text, but compressed. An example: The temperature value "-12.50Â°C" would require around eight bytes in plain text. An encoder in the sensor can multiply the temperature value by 100 and provide an offset so that the value can be accommodated in a 16-bit integer (whole number value) without decimal places and negative signs. This means that only two bytes are required for the same information. The decoder in turn performs opposite operations to the encoder and converts the temperature value back to the original formatting. There is more information about the compression of the payload data in this article: The LoRaWAN Payload. A decoder is usually stored in the LoRaWAN network, but can often be integrated into the application.
+
+For our integratoin with TAGO.io, we did not need a decoder, it's done be Tago.
+However to use a MQTT, it is necessary to run a decoder function in Console.
+
 ### Integration 
 
 
