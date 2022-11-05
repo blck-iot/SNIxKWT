@@ -2,7 +2,7 @@
 
 ## BLCK Team
 
-@Azegele & @thestephse
+[@Azegele](https://github.com/Azegele) & [@thestephse](https://github.com/thestephse)
 
 ### SNI x Kenya Wildlife Trust Hackathon [Participants briefing](https://docs.google.com/presentation/d/1VLqtiZAZAbd1shTh0gsjylLx4jwKxX6t3hGPZLfiCYE/edit#slide=id.gfc8cd0c195_0_129)
 
