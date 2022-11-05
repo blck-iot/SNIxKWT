@@ -152,7 +152,7 @@ Strategy on end:
 >02022C02
 
 
-## Helium Console
+## Helium Console 
 
 The [Helium Console](http://console.helium.com/) is a web-based device management tool hosted by the Helium Foundation that allows developers to register, authenticate, and manage their devices on the Helium network. In addition to device management, Console provides prebuilt connections called Integrations to route device data via HTTPs or MQTT; or directly to cloud services like AWS IoT.
 
