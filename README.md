@@ -180,7 +180,7 @@ About 20 minutes after registration, the respective sensor can be switched on. T
 
 LoRaWAN tries to send as few bytes as possible over the air. Therefore, sensor data is not transmitted in plain text, but compressed. An example: The temperature value "-12.50Â°C" would require around eight bytes in plain text. An encoder in the sensor can multiply the temperature value by 100 and provide an offset so that the value can be accommodated in a 16-bit integer (whole number value) without decimal places and negative signs. This means that only two bytes are required for the same information. The decoder in turn performs opposite operations to the encoder and converts the temperature value back to the original formatting. There is more information about the compression of the payload data in this article: The LoRaWAN Payload. A decoder is usually stored in the LoRaWAN network, but can often be integrated into the application.
 
-For our integration with TAGO.io, we did not need a decoder, it's done be Tago.
+For our integration with TAGO.io, we did not need a decoder, it's done by Tago.
 However to use a MQTT, it is necessary to run a decoder function in Console. ([lw001-decoder.js](lw001-decoder.js))
 
 
@@ -190,9 +190,19 @@ However to use a MQTT, it is necessary to run a decoder function in Console. ([l
 <img width="750" alt="CleanShot 2022-11-05 at 11 44 33@2x" src="https://user-images.githubusercontent.com/42295932/200116186-36515a0a-1898-4e12-ad60-638f17508d31.png">
 
 
-## TAGOio
+## TAGO.io
+
+>TagoIO IoT Cloud Platform provides easy connection of electronic devices with external data to driver smarter decisions using contextual analysis.
 
 ### Dashbaord
+
+Individual dashboard can be created and accessed via a WebApp or MobileApp.
+
+
+
+Also unexperienced users can create geofences.
+
+
 
 ### Analysis
 
