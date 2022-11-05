@@ -175,19 +175,19 @@ About 20 minutes after registration, the respective sensor can be switched on. T
 
 ![Helium_Console_JOIN_success-185429](https://user-images.githubusercontent.com/42295932/200115431-6645120c-9741-45cd-8c09-ce038a864153.jpeg)
 
-### Console Flow
-
-<img width="833" alt="CleanShot 2022-11-05 at 11 44 33@2x" src="https://user-images.githubusercontent.com/42295932/200116186-36515a0a-1898-4e12-ad60-638f17508d31.png">
-
 
 ### Payload Decoder
 
 LoRaWAN tries to send as few bytes as possible over the air. Therefore, sensor data is not transmitted in plain text, but compressed. An example: The temperature value "-12.50Â°C" would require around eight bytes in plain text. An encoder in the sensor can multiply the temperature value by 100 and provide an offset so that the value can be accommodated in a 16-bit integer (whole number value) without decimal places and negative signs. This means that only two bytes are required for the same information. The decoder in turn performs opposite operations to the encoder and converts the temperature value back to the original formatting. There is more information about the compression of the payload data in this article: The LoRaWAN Payload. A decoder is usually stored in the LoRaWAN network, but can often be integrated into the application.
 
-For our integratoin with TAGO.io, we did not need a decoder, it's done be Tago.
-However to use a MQTT, it is necessary to run a decoder function in Console.
+For our integration with TAGO.io, we did not need a decoder, it's done be Tago.
+However to use a MQTT, it is necessary to run a decoder function in Console. ([lw001-decoder.js](lw001-decoder.js))
 
-### Integration 
+
+
+### Console Flow
+
+<img width="750" alt="CleanShot 2022-11-05 at 11 44 33@2x" src="https://user-images.githubusercontent.com/42295932/200116186-36515a0a-1898-4e12-ad60-638f17508d31.png">
 
 
 ## TAGOio
