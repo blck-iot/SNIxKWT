@@ -211,9 +211,16 @@ Also unexperienced users can create geofences.
 
 ### Analysis
 
-
+[Geofence Analysis](tago_geofence.js)
 
 ### Alerts
+
+Events such as a cow entering a previously defined are or leaving it can trigger alerts, but also lion-beacons registered by the tracker.
+The alert can be an e-mail or SMS, but we were also thinking on LoRaWAN downlinks. We learned, that often children help their parents by herding the cows or simply a herder would not posses a mobile phone. 
+
+We can use a LoRaWan-Based panic button. If an alert is trigger it would send a signal to the panic button which would in response start to vibrate. 
+
+
 
 
 ## Conclusion
