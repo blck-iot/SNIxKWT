@@ -198,9 +198,14 @@ However to use a MQTT, it is necessary to run a decoder function in Console. ([l
 
 Individual dashboard can be created and accessed via a WebApp or MobileApp.
 
+<img width="1391" alt="CleanShot 2022-11-05 at 12 13 57@2x" src="https://user-images.githubusercontent.com/42295932/200117148-e256897f-b222-4881-8362-07b3a7b87e9f.png">
 
 
 Also unexperienced users can create geofences.
+
+<img width="1343" alt="CleanShot 2022-11-05 at 12 01 26@2x" src="https://user-images.githubusercontent.com/42295932/200117110-e9ea0b5d-4015-44c0-9d9d-e0abc3a77136.png">
+
+<img width="560" alt="CleanShot 2022-11-05 at 12 02 20@2x" src="https://user-images.githubusercontent.com/42295932/200117085-62c26d94-7a6c-4ae6-a8bd-789d83f6ca0c.png">
 
 
 
