@@ -220,6 +220,7 @@ The alert can be an e-mail or SMS, but we were also thinking on LoRaWAN downlink
 
 We can use a LoRaWan-Based panic button. If an alert is trigger it would send a signal to the panic button which would in response start to vibrate. 
 
+<img width="200" alt="Moko LW004" src="https://user-images.githubusercontent.com/42295932/200124235-3e8cecdc-cd10-4222-82a4-174c36f142fb.png">
 
 
 
