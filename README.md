@@ -172,7 +172,7 @@ Bluetooth beacons are hardware transmitters — a class of Bluetooth Low Energy 
 
 ### BLE Location Fix
 
-<img width="250" alt="CleanShot 2022-11-06 at 11 20 11@2x" src="https://user-images.githubusercontent.com/42295932/200165431-96077fb7-9794-48a8-ac2a-9d5805eb7efd.png">
+<img width="250" alt="BLE Location Fix" src="https://user-images.githubusercontent.com/42295932/200165431-96077fb7-9794-48a8-ac2a-9d5805eb7efd.png">
 
 The LW001 can "listen" for Bluetooth beacons. The intended use is to calculate the tracker's location based on the signal strength and known locations of beacons. 
 
@@ -268,7 +268,7 @@ However to use a MQTT, it is necessary to run a decoder function in Console. ([l
 
 ### Console Flow
 
-<img width="750" alt="CleanShot 2022-11-05 at 11 44 33@2x" src="https://user-images.githubusercontent.com/42295932/200116186-36515a0a-1898-4e12-ad60-638f17508d31.png">
+<img width="750" alt="Console Flow" src="https://user-images.githubusercontent.com/42295932/200116186-36515a0a-1898-4e12-ad60-638f17508d31.png">
 
 
 ## TAGO.io
@@ -279,14 +279,14 @@ However to use a MQTT, it is necessary to run a decoder function in Console. ([l
 
 Individual dashboard can be created and accessed via a WebApp or MobileApp.
 
-<img width="500" alt="CleanShot 2022-11-05 at 12 13 57@2x" src="https://user-images.githubusercontent.com/42295932/200117148-e256897f-b222-4881-8362-07b3a7b87e9f.png">
+<img width="500" alt="Tago 1" src="https://user-images.githubusercontent.com/42295932/200117148-e256897f-b222-4881-8362-07b3a7b87e9f.png">
 
 
 Also unexperienced users can create geofences.
 
-<img width="500" alt="CleanShot 2022-11-05 at 12 01 26@2x" src="https://user-images.githubusercontent.com/42295932/200117110-e9ea0b5d-4015-44c0-9d9d-e0abc3a77136.png">
+<img width="500" alt="Tago 2" src="https://user-images.githubusercontent.com/42295932/200117110-e9ea0b5d-4015-44c0-9d9d-e0abc3a77136.png">
 
-<img width="500" alt="CleanShot 2022-11-05 at 12 02 20@2x" src="https://user-images.githubusercontent.com/42295932/200117085-62c26d94-7a6c-4ae6-a8bd-789d83f6ca0c.png">
+<img width="500" alt="Tago 3" src="https://user-images.githubusercontent.com/42295932/200117085-62c26d94-7a6c-4ae6-a8bd-789d83f6ca0c.png">
 
 
 
