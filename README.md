@@ -42,7 +42,7 @@ One could also run their own LNS, instructions [here](https://docs.helium.com/us
 
 ### Providing Coverage
 
-We picked various Hotels in the Masaai Mara and its bordering conservancies and simulated LoRa coverage if gateways would be deployed at those locations. 
+We picked various Hotels in the Maasai Mara and its bordering conservancies and simulated LoRa coverage if gateways would be deployed at those locations. 
 As conflicts usually happened close to the borders, not many locations would be necessary to provide good coverage.
 
 However, due to PoC ([Proof of Coverage](https://www.gemini.com/cryptopedia/glossary#proof-of-coverage-po-c)) mechanics deploying numerous gateways would be rather favored from our end, because additional earnings would cover investments in devices sooner. And in additional better and more resilient coverage can be achieved. 
@@ -336,9 +336,15 @@ Prediction models could be one solution, if we collect enough data from lion mov
 
 #### Vision AI
 
+While running into limitations of our solution (_not all lions will have a collar_) and also talking with other teams of the hackathon, additional sensor applications came to mind. 
+We ran a first test to use Vision AI Sensors that work on LoRa.
+
+More under [Edge AI](Edge%20AI/edge_readme.md)
 
 
 #### Audio Sensors
+
+_requires more research_
 
 ## Vision
 
@@ -346,6 +352,8 @@ Prediction models could be one solution, if we collect enough data from lion mov
 
 
 ### Carbon Credits
+
+_We just started to explore this field, but see already plenty of possibilities how stakeholders around the Maasai Mara could use the LoRa Network in combination with IoT and Blockchain. We continue to explore, but think this should be the topic of another hackathon... - What do you think, SNI ?_
 
 #### DMRV
 
