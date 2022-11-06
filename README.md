@@ -80,11 +80,8 @@ The LW001 can use three different ways to define its location.
 _A) GPS B) WiFi C) BLE_
 
 Lokalization via GPS should not require further explanation. Here we use it while the Cow is moving.  
-The tracker can listen SSID's of WiFi networks or UUID's of buethooth beacons. If the location of beacon or Wifi Hotspots is know, one can calculate the Trackers location. 
+The tracker can listen SSID's of WiFi networks or UUID's of buethooth beacons. If the location of beacon or Wifi Hotspots is know, one can calculate the trackers location. (See also: [BLE - Location Fix](#ble-location-fix))
 
-
-We turned this concept around. Assuming that:
->**IF** the tracker can *hear* a beacon and this beacon is e.g. attached to a lions collar **THEN** the lion must be within a radius around the tracker.
 
 Changing its state from III) to IV) the tracker is "checking for lion presence" three times in an 1000 sec interval. 
 
@@ -151,19 +148,79 @@ Strategy on end:
 >BLE 
 >02022C02
 
-## Lion Detection - iBeacon
+## Lion Detection
 
-### BLE & iBeacon
+### Bluetooth Beacon
+
+Bluetooth beacons are hardware transmitters — a class of Bluetooth Low Energy (LE) devices that broadcast their identifier to nearby portable electronic devices. The technology enables smartphones, tablets and other devices to perform actions when in close proximity to a beacon.
+(Source: [Wikipedia](https://en.wikipedia.org/wiki/Bluetooth_Low_Energy_beacon))
 
 
+### BLE Location Fix
 
+<img width="250" alt="CleanShot 2022-11-06 at 11 20 11@2x" src="https://user-images.githubusercontent.com/42295932/200165431-96077fb7-9794-48a8-ac2a-9d5805eb7efd.png">
 
-<img width="446" alt="CleanShot 2022-11-06 at 11 20 11@2x" src="https://user-images.githubusercontent.com/42295932/200165431-96077fb7-9794-48a8-ac2a-9d5805eb7efd.png">
+The LW001 can "listen" for bluetooth beacons. The intendet use is to calculate the trackers locations based on signal strength and known loaction of beacons. 
+
+We re-purposed this functionality. The logic behind is:
+
+>**IF** the tracker can *hear* a beacon and this beacon is e.g. attached to a lions collar **THEN** the lion must be within a radius around the tracker.  
+  
+
+##### Filters
+
+For this we configured filters that only beacons with defined _Major_ are forwarded by the tracker. With _Majors_ groups of beacon tags can be created. All lion tags will have the same _Major_
+ The payload that is send from the tracker to TAGO contains:
+
+- **UUID**
+- **RSSI**
+- **BLE Fix Status**
+
+ >BLE Fix Success == Lion in range
+ BLE Fix Failed == No lion in range
+
+ We can map the UUID to an individual lion and with RSSI estimate the distance of the lion to the cow.
+
 
 
 
 ## LW001 Configuration (Step 2) 
 
+Filter condition: 
+> OR
+> 02023400
+> 
+Switch Filter A:
+> ON	
+> 02023501
+> 
+
+MAC Filter: 
+> OFF  
+> 02043700
+
+Major Filter: 
+
+> ON	
+> Major 01 - 02
+> 026380100010002
+
+Minor Filter:
+> OFF	
+> 02063900
+
+Raw Data Filter:
+> OFF	
+> 02083A00
+>
+UUID Filter:
+> OFF 	
+> 02053B00
+> 
+RSSI Filter: 
+
+> -125dBm	
+> 02023C83
 
 ## Helium Console 
 
