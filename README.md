@@ -153,7 +153,8 @@ Strategy on end:
 
 ## Lion Detection
 
-<img width="440" alt="CleanShot 2022-11-06 at 11 12 14@2x" src="https://user-images.githubusercontent.com/42295932/200165165-67135501-f0b4-4058-abba-3b60a5f69754.png">
+
+<img width="446" alt="CleanShot 2022-11-06 at 11 20 11@2x" src="https://user-images.githubusercontent.com/42295932/200165431-96077fb7-9794-48a8-ac2a-9d5805eb7efd.png">
 
 
 
