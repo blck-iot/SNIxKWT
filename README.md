@@ -27,15 +27,15 @@ LoRaWAN is a low-power, wide area networking protocol built on top of the LoRa r
 
 ### Why Helium?
 
-Crypto incentivized network with almost 1. Mio Gateways worldwide. Return on investment cost of a gateway can made through PoC (Proof of Coverage) rewards and DC (Data Credits) consumption. 
-LNS managed by Helium Foundation. End-Nodes can be integrated in minutes.
-One could also run their own LNS, instructions [here](https://docs.helium.com/use-the-network/run-a-network-server/buy-an-oui/) 
+Crypto incentivized network with almost [1 million gateways worldwide](https://explorer.helium.com/). Return on investment cost of a gateway can made through [Proof of Coverage (PoC)](https://docs.helium.com/blockchain/proof-of-coverage) rewards and Data Credits(DC) consumption. 
+LoRaWAN Network Servers (LNS) , managed by [Helium Foundation](https://www.helium.foundation/) can be integrated in minutes.
+One could also run their own LNS, instructions [here](https://docs.helium.com/use-the-network/run-a-network-server) 
 
->Deployed infrastructure can be used permissionless by other projects. 
+>Deployed infrastructure can be used permissionlessly by other projects. 
 
 
 
-## Concept of GPS Tracker & iBeacon
+## Concept of GPS Tracker & Beacon
 
 ![MOKO LW001 - cow monitoring](https://user-images.githubusercontent.com/42295932/200038420-5bdc0232-f19d-4431-8e6f-d5a258a1752d.png)
 _Schema Moko LW001 States & Payloads_
