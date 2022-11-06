@@ -330,7 +330,16 @@ Prediction models could be one solution, if we collect enough data from lion mov
 
 ### Next Steps
 
+1) Starting a conversation with hotels and deploy gateways
+2) Map & verify coverage 
+3) Run first test with tracker, BLE tag & Panic button.
+
 ### StreamR (MQTT)
+
+StreamR is a Web3 protocol that makes it possible to share and consume data. 
+Instead of keeping the sensor data private and locked away in silos, it can be monitized and shared with other parties in a secure way. 
+
+>This can directly benefit the communities providing valuable data.
 
 ### More sensors
 
