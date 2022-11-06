@@ -151,7 +151,11 @@ Strategy on end:
 >BLE 
 >02022C02
 
-## Lion Detection
+## Lion Detection - iBeacon
+
+### BLE & iBeacon
+
+
 
 <img width="440" alt="CleanShot 2022-11-06 at 11 12 14@2x" src="https://user-images.githubusercontent.com/42295932/200165165-67135501-f0b4-4058-abba-3b60a5f69754.png">
 
