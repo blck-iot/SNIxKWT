@@ -320,6 +320,8 @@ Prediction models could be one solution, if we collect enough data from lion mov
 
 #### Vision AI
 
+
+
 #### Audio Sensors
 
 ## Vision
