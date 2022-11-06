@@ -32,6 +32,13 @@ LNS managed by Helium Foundation. End-Nodes can be integrated in minutes.
 
 >Deployed infrastructure can be used permissionless by other projects. 
 
+### Providing Coverage
+
+We picked various Hotels in the Masaai Mara and its bordering conservancies and simulated LoRa coverage if gateways would be deployed at those locations. 
+As conflicts usually happened close to the borders, not many locations would be necessary to provide good coverage.
+
+However, due to PoC ([Proof of Coverage](https://www.gemini.com/cryptopedia/glossary#proof-of-coverage-po-c)) mechanics deploying numerous gateways would be rather favored from our end, because additional earnings would cover investments in devices sooner. And in additional better and more resilient coverage can be achieved. 
+
 
 
 ## Concept of GPS Tracker & iBeacon
