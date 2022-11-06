@@ -38,7 +38,7 @@ LoRaWAN is a low-power, wide area networking protocol built on top of the LoRa r
 
 One could also run their own LNS, instructions [here](https://docs.helium.com/use-the-network/run-a-network-server) 
 
->Deployed infrastructure can be used permissionlessly by other projects. 
+>Deployed infrastructure can be used permissionless by other projects. 
 
 ### Providing Coverage
 
