@@ -26,14 +26,16 @@
 - [Chain Statistics](https://etl.dewi.org/)
 - [Hotspot Manufacturer Verification](https://docs.google.com/spreadsheets/d/1pOmrMV_oiF0FtR1NOX_pqykKOBsb_QghiNkTlF644DU/edit#gid=440841804)
 
-### LoRaWAN
+### [LoRaWAN](https://lora-alliance.org/about-lorawan/)
 
 LoRaWAN is a low-power, wide area networking protocol built on top of the LoRa radio modulation technique. It wirelessly connects devices to the internet and manages communication between end-node devices and network gateways.
 
 ### Why Helium?
 
-Crypto incentivized network with almost [1 million gateways worldwide](https://explorer.helium.com/). Return on investment cost of a gateway can made through [Proof of Coverage (PoC)](https://docs.helium.com/blockchain/proof-of-coverage) rewards and Data Credits(DC) consumption. 
-LoRaWAN Network Servers (LNS) , managed by [Helium Foundation](https://www.helium.foundation/) can be integrated in minutes.
+-Crypto incentivized network with almost [1 million gateways worldwide](https://explorer.helium.com/). 
+-Return on Investment(ROI) cost of a gateway can made through [Proof of Coverage (PoC)](https://docs.helium.com/blockchain/proof-of-coverage) rewards and Data Credits(DC) consumption. 
+-[LoRaWAN Network Servers (LNS)](https://console.helium.com/) , managed by [Helium Foundation](https://www.helium.foundation/) can be integrated in minutes.
+
 One could also run their own LNS, instructions [here](https://docs.helium.com/use-the-network/run-a-network-server) 
 
 >Deployed infrastructure can be used permissionlessly by other projects. 
