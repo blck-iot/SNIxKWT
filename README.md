@@ -297,6 +297,9 @@ Such panic buttons have a battery life of a couple of months and are re-chargeab
 
 ## Conclusion
 
+![Hackathon Flow (Detail)](https://user-images.githubusercontent.com/42295932/200173941-e17f4730-b5d0-4a92-8e9f-8ed6a5610437.png)
+
+
 We can use Helium to build a LoRaWan Network in the Masaai Mara National Reserve and its neighbouring conservacies.After meeting with SNI, KWT and our fellow hackathon paarticipants, we realised that there is a multitude of other possible applicatonin addition to our idea of tracking lions with GPS.
 
 It was not necessary to reinvent the wheel as most of the things we need existed already, some slight adjustments and we'd be ready to implement it. 
