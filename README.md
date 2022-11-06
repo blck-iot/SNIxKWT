@@ -326,6 +326,9 @@ Prediction models could be one solution, if we collect enough data from lion mov
 
 ## Vision
 
+![Hackathon Brainstorm Prep](https://user-images.githubusercontent.com/42295932/200174110-eed8d8c1-d84b-4487-b9d9-89094e00f5d6.png)
+
+
 ### Carbon Credits
 
 #### DMRV
