@@ -20,6 +20,11 @@
 ## HELIUM - The People's Network
 
 ### [Helium explained in under 4 Minutes - Video](https://www.youtube.com/watch?v=dOFWZZ58UYs)
+- [Helium documentation](https://docs.helium.com/)
+- [Helium Improvement Proposals (HIP)](https://github.com/helium/HIP)
+- [Chain Performance](https://dashboard.helium.com/)
+- [Chain Statistics](https://etl.dewi.org/)
+- [Hotspot Manufacturer Verification](https://docs.google.com/spreadsheets/d/1pOmrMV_oiF0FtR1NOX_pqykKOBsb_QghiNkTlF644DU/edit#gid=440841804)
 
 ### LoRaWAN
 
