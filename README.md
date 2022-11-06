@@ -12,7 +12,7 @@
 
 ### Technology used by BLCK
 
-- Lora
+- LoRa
 - Helium Network
 - GPS Tracker
 - Bluetooth Beacons
