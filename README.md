@@ -27,7 +27,7 @@ LoRaWAN is a low-power, wide area networking protocol built on top of the LoRa r
 
 ### Why Helium?
 
-Crypto intensivized network with almost 1.Mio Gateways worldwide. Costs of gateway can "can be earned back (missing the word)" through PoC (Proof of Coverage) rewards and DC (Data Credits) consumption. 
+Crypto incentivized network with almost 1. Mio Gateways worldwide. Costs of a gateway can "can be earned back (missing the word)" through PoC (Proof of Coverage) rewards and DC (Data Credits) consumption. 
 LNS managed by Helium Foundation. End-Nodes can be integrated in minutes.
 
 >Deployed infrastructure can be used permissionless by other projects. 
@@ -47,7 +47,7 @@ _a) Periodic_
 _b) Intervall_ 
 _c) Motion_
 
-Most economic for battery life is the motion mode, which uses the integrated acceleration sensor to switch between states.
+Most efficient for battery life is the motion mode, which uses the integrated acceleration sensor to switch between states.
 
 _I) Stationary_ 
 _II) Start moving_ 
@@ -70,8 +70,8 @@ If they are not met anymore state will change from **III) to IV)**.
 ## Payloads
 
 Payloads are small byte-size data packets sent from the tracker.
-Helium is at this point only accepting Class A sensors. Class A sensor can send Payloads and are listening for a short period for an answer. This saves battery life, but has the downside that one can not just send commands.
-A workaround are **"Heartbeats"**. The sensor is sending in defined intervalls small payloads and makes it possible to send Downlink commands.
+Helium is at this point only working with Class A sensors. Class A sensors can send Payloads and listen for a short period for an answer. This saves battery life but has the downside that one can not just send commands.
+A workaround is **"Heartbeats"**. The sensor sends in defined intervals small payloads to make it possible to receive Downlink commands.
 
 ## Location Fix
 
@@ -79,13 +79,11 @@ The LW001 can use three different ways to define its location.
 
 _A) GPS B) WiFi C) BLE_
 
-Lokalization via GPS should not require further explanation. Here we use it while the Cow is moving.  
-The tracker can listen SSID's of WiFi networks or UUID's of buethooth beacons. If the location of beacon or Wifi Hotspots is know, one can calculate the trackers location. (See also: [BLE - Location Fix](#ble-location-fix))
+Localization via GPS should not require further explanation. Here we use it while the Cow is moving.  
+The tracker can listen SSIDs of WiFi networks or UUIDs of Bluetooth beacons. If the location of the beacon or WiFi Hotspots is known, one can calculate the tracker's location. (See also: [BLE - Location Fix](#ble-location-fix))
 
 
 Changing its state from III) to IV) the tracker is "checking for lion presence" three times in an 1000 sec interval. 
-
-
 
 
 ## LW001 Configuration (Step 1)
@@ -160,17 +158,16 @@ Bluetooth beacons are hardware transmitters — a class of Bluetooth Low Energy 
 
 <img width="250" alt="CleanShot 2022-11-06 at 11 20 11@2x" src="https://user-images.githubusercontent.com/42295932/200165431-96077fb7-9794-48a8-ac2a-9d5805eb7efd.png">
 
-The LW001 can "listen" for bluetooth beacons. The intendet use is to calculate the trackers locations based on signal strength and known loaction of beacons. 
+The LW001 can "listen" for Bluetooth beacons. The intended use is to calculate the tracker's location based on the signal strength and known locations of beacons. 
 
-We re-purposed this functionality. The logic behind is:
+We re-purposed this functionality. The logic behind this is:
 
->**IF** the tracker can *hear* a beacon and this beacon is e.g. attached to a lions collar **THEN** the lion must be within a radius around the tracker.  
-  
+>**IF** the tracker can *hear* a beacon and this beacon is attached to a lion's collar **THEN** the lion must be within a radius around the tracker.  
 
 ##### Filters
 
-For this we configured filters that only beacons with defined _Major_ are forwarded by the tracker. With _Majors_ groups of beacon tags can be created. All lion tags will have the same _Major_
- The payload that is send from the tracker to TAGO contains:
+For this, we configured filters so that only beacons with defined _Major_ are considered by the tracker. With _Major_ settings,  groups of beaconing tags can be created. In our case, all lion tags will have the same _Major_
+ The payload that is sent from the tracker to TAGO c
 
 - **UUID**
 - **RSSI**
@@ -180,8 +177,6 @@ For this we configured filters that only beacons with defined _Major_ are forwar
  BLE Fix Failed == No lion in range
 
  We can map the UUID to an individual lion and with RSSI estimate the distance of the lion to the cow.
-
-
 
 
 ## LW001 Configuration (Step 2) 
@@ -285,13 +280,16 @@ Also unexperienced users can create geofences.
 
 ### Alerts
 
-Events such as a cow entering a previously defined are or leaving it can trigger alerts, but also lion-beacons registered by the tracker.
-The alert can be an e-mail or SMS, but we were also thinking on LoRaWAN downlinks. We learned, that often children help their parents by herding the cows or simply a herder would not posses a mobile phone. 
+Events such as a cow entering a previously defined area or leaving it can trigger alerts, but also lion-beacons registered by the tracker.
+The alert can be an e-mail or SMS.
+However, we learned that often children help their parents with herding the cows or simply a herder would not possess a mobile phone. 
 
-We can use a LoRaWan-Based panic button. If an alert is trigger it would send a signal to the panic button which would in response start to vibrate.
+We can use a LoRaWan-Based panic button to close this gap. If an alert is a trigger it would send a signal to the panic button which would in response start to vibrate.
+
+Additional logic could be based on how often a button is pressed in response to vibration.
 
 This is an inexpensive solution with a low entry barrier. 
-Such panic buttons have a battery life of a couple of months and are re-chargable. 
+Such panic buttons have a battery life of a couple of months and are re-chargeable. 
 
 <img width="250" alt="Moko LW004" src="https://user-images.githubusercontent.com/42295932/200124235-3e8cecdc-cd10-4222-82a4-174c36f142fb.png">
 
@@ -301,7 +299,7 @@ Such panic buttons have a battery life of a couple of months and are re-chargabl
 
 We can use Helium to build a LoRaWan Network in the Masaai Mara National Reserve and its neighbouring conservacies.After meeting with SNI, KWT and our fellow hackathon paarticipants, we realised that there is a multitude of other possible applicatonin addition to our idea of tracking lions with GPS.
 
-It was not necessary to reinvent the wheel as most of the things we need existed already, what would be necessary is slight adjustments and we'd be ready to implement. 
+It was not necessary to reinvent the wheel as most of the things we need existed already, some slight adjustments and we'd be ready to implement it. 
 
 Tracking lions and/or cows with GPS could be just the first step in our journey in bringing IoT to the Wild. 
 
