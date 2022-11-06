@@ -27,8 +27,9 @@ LoRaWAN is a low-power, wide area networking protocol built on top of the LoRa r
 
 ### Why Helium?
 
-Crypto incentivized network with almost 1. Mio Gateways worldwide. Costs of a gateway can "can be earned back (missing the word)" through PoC (Proof of Coverage) rewards and DC (Data Credits) consumption. 
+Crypto incentivized network with almost 1. Mio Gateways worldwide. Return on investment cost of a gateway can made through PoC (Proof of Coverage) rewards and DC (Data Credits) consumption. 
 LNS managed by Helium Foundation. End-Nodes can be integrated in minutes.
+One could also run their own LNS, instructions [here](https://docs.helium.com/use-the-network/run-a-network-server/buy-an-oui/) 
 
 >Deployed infrastructure can be used permissionless by other projects. 
 
