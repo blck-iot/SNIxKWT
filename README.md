@@ -47,6 +47,7 @@ As conflicts usually happened close to the borders, not many locations would be 
 
 However, due to PoC ([Proof of Coverage](https://www.gemini.com/cryptopedia/glossary#proof-of-coverage-po-c)) mechanics deploying numerous gateways would be rather favored from our end, because additional earnings would cover investments in devices sooner. And in additional better and more resilient coverage can be achieved. 
 
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/42295932/200187192-5ee4b3bb-0a8f-46d1-b6e6-6efd54e2fc6c.gif)
 
 
 ## Concept of GPS Tracker & Beacon
