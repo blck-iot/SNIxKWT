@@ -20,17 +20,25 @@
 ## HELIUM - The People's Network
 
 ### [Helium explained in under 4 Minutes - Video](https://www.youtube.com/watch?v=dOFWZZ58UYs)
+- [Helium documentation](https://docs.helium.com/)
+- [Helium Improvement Proposals (HIP)](https://github.com/helium/HIP)
+- [Chain Performance](https://dashboard.helium.com/)
+- [Chain Statistics](https://etl.dewi.org/)
+- [Hotspot Manufacturer Verification](https://docs.google.com/spreadsheets/d/1pOmrMV_oiF0FtR1NOX_pqykKOBsb_QghiNkTlF644DU/edit#gid=440841804)
 
-### LoRaWAN
+### [LoRaWAN](https://lora-alliance.org/about-lorawan/)
 
 LoRaWAN is a low-power, wide area networking protocol built on top of the LoRa radio modulation technique. It wirelessly connects devices to the internet and manages communication between end-node devices and network gateways.
 
 ### Why Helium?
 
-Crypto incentivized network with almost 1. Mio Gateways worldwide. Costs of a gateway can "can be earned back (missing the word)" through PoC (Proof of Coverage) rewards and DC (Data Credits) consumption. 
-LNS managed by Helium Foundation. End-Nodes can be integrated in minutes.
+-Crypto incentivized network with almost [1 million gateways worldwide](https://explorer.helium.com/). 
+-Return on Investment(ROI) cost of a gateway can made through [Proof of Coverage (PoC)](https://docs.helium.com/blockchain/proof-of-coverage) rewards and Data Credits(DC) consumption. 
+-[LoRaWAN Network Servers (LNS)](https://console.helium.com/) , managed by [Helium Foundation](https://www.helium.foundation/) can be integrated in minutes.
 
->Deployed infrastructure can be used permissionless by other projects. 
+One could also run their own LNS, instructions [here](https://docs.helium.com/use-the-network/run-a-network-server) 
+
+>Deployed infrastructure can be used permissionlessly by other projects. 
 
 ### Providing Coverage
 
@@ -41,7 +49,7 @@ However, due to PoC ([Proof of Coverage](https://www.gemini.com/cryptopedia/glos
 
 
 
-## Concept of GPS Tracker & iBeacon
+## Concept of GPS Tracker & Beacon
 
 ![MOKO LW001 - cow monitoring](https://user-images.githubusercontent.com/42295932/200038420-5bdc0232-f19d-4431-8e6f-d5a258a1752d.png)
 _Schema Moko LW001 States & Payloads_
