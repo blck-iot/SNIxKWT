@@ -1,36 +1,82 @@
+<!-- vscode-markdown-toc -->
+* 1. [ SNI x Kenya Wildlife Trust Hackathon](#SNIxKenyaWildlifeTrustHackathon)
+* 2. [Technology used by BLCK](#TechnologyusedbyBLCK)
+* 3. [HELIUM - The People's Network](#HELIUM-ThePeoplesNetwork)
+	* 3.1. [[Helium explained in under 4 Minutes - Video](https://www.youtube.com/watch?v=dOFWZZ58UYs)](#Heliumexplainedinunder4Minutes-Videohttps:www.youtube.comwatchvdOFWZZ58UYs)
+	* 3.2. [[LoRaWAN](https://lora-alliance.org/about-lorawan/)](#LoRaWANhttps:lora-alliance.orgabout-lorawan)
+	* 3.3. [Why Helium?](#WhyHelium)
+	* 3.4. [Providing Coverage](#ProvidingCoverage)
+* 4. [Concept of GPS Tracker & Beacon](#ConceptofGPSTrackerBeacon)
+	* 4.1. [Working Modes](#WorkingModes)
+	* 4.2. [Triggers](#Triggers)
+* 5. [Payloads](#Payloads)
+* 6. [Location Fix](#LocationFix)
+* 7. [LW001 Configuration (Step 1)](#LW001ConfigurationStep1)
+* 8. [Lion Detection](#LionDetection)
+	* 8.1. [Bluetooth Beacon](#BluetoothBeacon)
+	* 8.2. [BLE Location Fix](#BLELocationFix)
+* 9. [LW001 Configuration (Step 2)](#LW001ConfigurationStep2)
+* 10. [Helium Console](#HeliumConsole)
+	* 10.1. [Register Sensor](#RegisterSensor)
+	* 10.2. [Activate Sensor](#ActivateSensor)
+	* 10.3. [Payload Decoder](#PayloadDecoder)
+	* 10.4. [Console Flow](#ConsoleFlow)
+* 11. [TAGO.io](#TAGO.io)
+	* 11.1. [Dashbaord](#Dashbaord)
+	* 11.2. [Analysis](#Analysis)
+	* 11.3. [Alerts](#Alerts)
+* 12. [Conclusion](#Conclusion)
+	* 12.1. [Limitation](#Limitation)
+	* 12.2. [Next Steps](#NextSteps)
+	* 12.3. [StreamR (MQTT)](#StreamRMQTT)
+	* 12.4. [More sensors](#Moresensors)
+		* 12.4.1. [Vision AI](#VisionAI)
+		* 12.4.2. [Audio Sensors](#AudioSensors)
+* 13. [Vision](#Vision)
+	* 13.1. [Carbon Credits](#CarbonCredits)
+		* 13.1.1. [DMRV](#DMRV)
+		* 13.1.2. [Grazing Strategies](#GrazingStrategies)
+		* 13.1.3. [Weather Data](#WeatherData)
+		* 13.1.4. [Data Unions](#DataUnions)
+
+<!-- vscode-markdown-toc-config
+	numbering=true
+	autoSave=true
+	/vscode-markdown-toc-config -->
+<!-- /vscode-markdown-toc -->
 # SNIxKWT Hackathon
 
-## BLCK Team
+ <a name='BLCKTeam'></a>BLCK Team [@Azegele](https://github.com/Azegele) & [@thestephse](https://github.com/thestephse)
 
-[@Azegele](https://github.com/Azegele) & [@thestephse](https://github.com/thestephse)
+##  1. <a name='SNIxKenyaWildlifeTrustHackathon'></a> SNI x Kenya Wildlife Trust Hackathon 
 
-### SNI x Kenya Wildlife Trust Hackathon [Participants briefing](https://docs.google.com/presentation/d/1VLqtiZAZAbd1shTh0gsjylLx4jwKxX6t3hGPZLfiCYE/edit#slide=id.gfc8cd0c195_0_129)
+[Participants briefing](https://docs.google.com/presentation/d/1VLqtiZAZAbd1shTh0gsjylLx4jwKxX6t3hGPZLfiCYE/edit#slide=id.gfc8cd0c195_0_129)
 
 1. How can we use technology to support a synergetic relationship between herders and predators?
 2. What technologies might we use to incentivize nature stewards for their conservation efforts?
 3. Can new, emerging technologies be in true service to indigenous communities' cohabitation with wildlife?
 
-### Technology used by BLCK
+##  2. <a name='TechnologyusedbyBLCK'></a>Technology used by BLCK
 
 - LoRa
 - Helium Network
 - GPS Tracker
 - Bluetooth Beacons
 
-## HELIUM - The People's Network
+##  3. <a name='HELIUM-ThePeoplesNetwork'></a>HELIUM - The People's Network
 
-### [Helium explained in under 4 Minutes - Video](https://www.youtube.com/watch?v=dOFWZZ58UYs)
+###  3.1. <a name='Heliumexplainedinunder4Minutes-Videohttps:www.youtube.comwatchvdOFWZZ58UYs'></a>[Helium explained in under 4 Minutes - Video](https://www.youtube.com/watch?v=dOFWZZ58UYs)
 - [Helium documentation](https://docs.helium.com/)
 - [Helium Improvement Proposals (HIP)](https://github.com/helium/HIP)
 - [Chain Performance](https://dashboard.helium.com/)
 - [Chain Statistics](https://etl.dewi.org/)
 - [Hotspot Manufacturer Verification](https://docs.google.com/spreadsheets/d/1pOmrMV_oiF0FtR1NOX_pqykKOBsb_QghiNkTlF644DU/edit#gid=440841804)
 
-### [LoRaWAN](https://lora-alliance.org/about-lorawan/)
+###  3.2. <a name='LoRaWANhttps:lora-alliance.orgabout-lorawan'></a>[LoRaWAN](https://lora-alliance.org/about-lorawan/)
 
 LoRaWAN is a low-power, wide area networking protocol built on top of the LoRa radio modulation technique. It wirelessly connects devices to the internet and manages communication between end-node devices and network gateways.
 
-### Why Helium?
+###  3.3. <a name='WhyHelium'></a>Why Helium?
 
 -Crypto incentivized network with almost [1 million gateways worldwide](https://explorer.helium.com/). 
 -Return on Investment(ROI) cost of a gateway can made through [Proof of Coverage (PoC)](https://docs.helium.com/blockchain/proof-of-coverage) rewards and Data Credits(DC) consumption. 
@@ -40,7 +86,7 @@ One could also run their own LNS, instructions [here](https://docs.helium.com/us
 
 >Deployed infrastructure can be used permissionless by other projects. 
 
-### Providing Coverage
+###  3.4. <a name='ProvidingCoverage'></a>Providing Coverage
 
 We picked various Hotels in the Maasai Mara and its bordering conservancies and simulated LoRa coverage if gateways would be deployed at those locations. 
 As conflicts usually happened close to the borders, not many locations would be necessary to provide good coverage.
@@ -50,12 +96,12 @@ However, due to PoC ([Proof of Coverage](https://www.gemini.com/cryptopedia/glos
 ![ezgif com-gif-maker](https://user-images.githubusercontent.com/42295932/200187192-5ee4b3bb-0a8f-46d1-b6e6-6efd54e2fc6c.gif)
 
 
-## Concept of GPS Tracker & Beacon
+##  4. <a name='ConceptofGPSTrackerBeacon'></a>Concept of GPS Tracker & Beacon
 
 ![MOKO LW001 - cow monitoring](https://user-images.githubusercontent.com/42295932/200038420-5bdc0232-f19d-4431-8e6f-d5a258a1752d.png)
 _Schema Moko LW001 States & Payloads_
 
-### Working Modes
+###  4.1. <a name='WorkingModes'></a>Working Modes
 
 The Moko LW001 has three different working modes:
 
@@ -70,7 +116,7 @@ _II) Start moving_
 _III) In movement_ 
 _IV) End movement_
 
-### Triggers
+###  4.2. <a name='Triggers'></a>Triggers
 
 Triggers that change states:
 
@@ -83,13 +129,13 @@ Criteria **1) & 2)** have to be met to change from state **I) to II)**.
 **3) & 4)** has to be met to change state from **II) to III)**. 
 If they are not met anymore state will change from **III) to IV)**.
 
-## Payloads
+##  5. <a name='Payloads'></a>Payloads
 
 Payloads are small byte-size data packets sent from the tracker.
 Helium is at this point only working with Class A sensors. Class A sensors can send Payloads and listen for a short period for an answer. This saves battery life but has the downside that one can not just send commands.
 A workaround is **"Heartbeats"**. The sensor sends in defined intervals small payloads to make it possible to receive Downlink commands.
 
-## Location Fix
+##  6. <a name='LocationFix'></a>Location Fix
 
 The LW001 can use three different ways to define its location.
 
@@ -102,7 +148,7 @@ The tracker can listen SSIDs of WiFi networks or UUIDs of Bluetooth beacons. If 
 Changing its state from III) to IV) the tracker is "checking for lion presence" three times in an 1000 sec interval. 
 
 
-## LW001 Configuration (Step 1)
+##  7. <a name='LW001ConfigurationStep1'></a>LW001 Configuration (Step 1)
 
 
 
@@ -162,15 +208,15 @@ Strategy on end:
 >BLE 
 >02022C02
 
-## Lion Detection
+##  8. <a name='LionDetection'></a>Lion Detection
 
-### Bluetooth Beacon
+###  8.1. <a name='BluetoothBeacon'></a>Bluetooth Beacon
 
 Bluetooth beacons are hardware transmitters — a class of Bluetooth Low Energy (LE) devices that broadcast their identifier to nearby portable electronic devices. The technology enables smartphones, tablets and other devices to perform actions when in close proximity to a beacon.
 (Source: [Wikipedia](https://en.wikipedia.org/wiki/Bluetooth_Low_Energy_beacon))
 
 
-### BLE Location Fix
+###  8.2. <a name='BLELocationFix'></a>BLE Location Fix
 
 <img width="250" alt="BLE Location Fix" src="https://user-images.githubusercontent.com/42295932/200165431-96077fb7-9794-48a8-ac2a-9d5805eb7efd.png">
 
@@ -195,7 +241,7 @@ For this, we configured filters so that only beacons with defined _Major_ are co
  We can map the UUID to an individual lion and with RSSI estimate the distance of the lion to the cow.
 
 
-## LW001 Configuration (Step 2) 
+##  9. <a name='LW001ConfigurationStep2'></a>LW001 Configuration (Step 2) 
 
 Filter condition: 
 > OR
@@ -233,11 +279,11 @@ RSSI Filter:
 > -125dBm	
 > 02023C83
 
-## Helium Console 
+##  10. <a name='HeliumConsole'></a>Helium Console 
 
 The [Helium Console](http://console.helium.com/) is a web-based device management tool hosted by the Helium Foundation that allows developers to register, authenticate, and manage their devices on the Helium network. In addition to device management, Console provides prebuilt connections called Integrations to route device data via HTTPs or MQTT; or directly to cloud services like AWS IoT.
 
-### Register Sensor
+###  10.1. <a name='RegisterSensor'></a>Register Sensor
 _Source: [https://www.aeq-web.com/lht65-sensor-registrieren-im-helium-lorawan-netzwerk/?lang=en](https://www.aeq-web.com/lht65-sensor-registrieren-im-helium-lorawan-netzwerk/?lang=en)_
 
 
@@ -251,13 +297,13 @@ After the device has been created, it appears in the device list. It can take up
 
 ![Helium_Console_Device_after_Setup-103013](https://user-images.githubusercontent.com/42295932/200115417-2e8d6cdd-60e8-499d-b349-a724eb203e68.jpeg)
 
-### Activate Sensor
+###  10.2. <a name='ActivateSensor'></a>Activate Sensor
 About 20 minutes after registration, the respective sensor can be switched on. The sensor sends out a JOIN request. Each hotspot that has received the JOIN request forwards this packet to the network server. If the keys can be assigned to a device, a hotspot sends a JOIN accept packet with the session keys and a device address back to the sensor. The sensor accepts these keys and can send data into the Helium LoRaWAN from now on. To activate a LHT65, press the user button on the back for a few seconds:
 
 ![Helium_Console_JOIN_success-185429](https://user-images.githubusercontent.com/42295932/200115431-6645120c-9741-45cd-8c09-ce038a864153.jpeg)
 
 
-### Payload Decoder
+###  10.3. <a name='PayloadDecoder'></a>Payload Decoder
 
 LoRaWAN tries to send as few bytes as possible over the air. Therefore, sensor data is not transmitted in plain text, but compressed. An example: The temperature value "-12.50Â°C" would require around eight bytes in plain text. An encoder in the sensor can multiply the temperature value by 100 and provide an offset so that the value can be accommodated in a 16-bit integer (whole number value) without decimal places and negative signs. This means that only two bytes are required for the same information. The decoder in turn performs opposite operations to the encoder and converts the temperature value back to the original formatting. There is more information about the compression of the payload data in this article: The LoRaWAN Payload. A decoder is usually stored in the LoRaWAN network, but can often be integrated into the application.
 
@@ -266,16 +312,16 @@ However to use a MQTT, it is necessary to run a decoder function in Console. ([l
 
 
 
-### Console Flow
+###  10.4. <a name='ConsoleFlow'></a>Console Flow
 
 <img width="750" alt="Console Flow" src="https://user-images.githubusercontent.com/42295932/200116186-36515a0a-1898-4e12-ad60-638f17508d31.png">
 
 
-## TAGO.io
+##  11. <a name='TAGO.io'></a>TAGO.io
 
 >TagoIO IoT Cloud Platform provides easy connection of electronic devices with external data to driver smarter decisions using contextual analysis.
 
-### Dashbaord
+###  11.1. <a name='Dashbaord'></a>Dashbaord
 
 Individual dashboard can be created and accessed via a WebApp or MobileApp.
 
@@ -290,11 +336,11 @@ Also unexperienced users can create geofences.
 
 
 
-### Analysis
+###  11.2. <a name='Analysis'></a>Analysis
 
 [Geofence Analysis](tago_geofence.js)
 
-### Alerts
+###  11.3. <a name='Alerts'></a>Alerts
 
 Events such as a cow entering a previously defined area or leaving it can trigger alerts, but also lion-beacons registered by the tracker.
 The alert can be an e-mail or SMS.
@@ -311,7 +357,7 @@ Such panic buttons have a battery life of a couple of months and are re-chargeab
 
 
 
-## Conclusion
+##  12. <a name='Conclusion'></a>Conclusion
 
 ![Hackathon Flow (Detail)](https://user-images.githubusercontent.com/42295932/200173941-e17f4730-b5d0-4a92-8e9f-8ed6a5610437.png)
 
@@ -322,28 +368,28 @@ It was not necessary to reinvent the wheel as most of the things we need existed
 
 Tracking lions and/or cows with GPS could be just the first step in our journey in bringing IoT to the Wild. 
 
-### Limitation
+###  12.1. <a name='Limitation'></a>Limitation
 
 We learned that it is not as simple as we sometimes prototype solutions on our screen. It is not feasibly possible to collar every single lion and conduct any further maaintenance on the trackers. 
 
 Prediction models could be one solution, if we collect enough data from lion movements which could be supplimented by or substituted with Vision or Audio Sensors.
 
-### Next Steps
+###  12.2. <a name='NextSteps'></a>Next Steps
 
 1) Starting a conversation with hotels and deploy gateways
 2) Map & verify coverage 
 3) Run first test with tracker, BLE tag & Panic button.
 
-### StreamR (MQTT)
+###  12.3. <a name='StreamRMQTT'></a>StreamR (MQTT)
 
 StreamR is a Web3 protocol that makes it possible to share and consume data. 
 Instead of keeping the sensor data private and locked away in silos, it can be monitized and shared with other parties in a secure way. 
 
 >This can directly benefit the communities providing valuable data.
 
-### More sensors
+###  12.4. <a name='Moresensors'></a>More sensors
 
-#### Vision AI
+####  12.4.1. <a name='VisionAI'></a>Vision AI
 
 While running into limitations of our solution (_not all lions will have a collar_) and also talking with other teams of the hackathon, additional sensor applications came to mind. 
 We ran a first test to use Vision AI Sensors that work on LoRa.
@@ -351,24 +397,24 @@ We ran a first test to use Vision AI Sensors that work on LoRa.
 More under [Edge AI](Edge%20AI/edge_readme.md)
 
 
-#### Audio Sensors
+####  12.4.2. <a name='AudioSensors'></a>Audio Sensors
 
 _requires more research_
 
-## Vision
+##  13. <a name='Vision'></a>Vision
 
 ![Hackathon Brainstorm Prep](https://user-images.githubusercontent.com/42295932/200174110-eed8d8c1-d84b-4487-b9d9-89094e00f5d6.png)
 
 
-### Carbon Credits
+###  13.1. <a name='CarbonCredits'></a>Carbon Credits
 
 _We just started to explore this field, but see already plenty of possibilities how stakeholders around the Maasai Mara could use the LoRa Network in combination with IoT and Blockchain. We continue to explore, but think this should be the topic of another hackathon... - What do you think, SNI ?_
 
-#### DMRV
+####  13.1.1. <a name='DMRV'></a>DMRV
 
-#### Grazing Strategies
+####  13.1.2. <a name='GrazingStrategies'></a>Grazing Strategies
 
-#### Weather Data
+####  13.1.3. <a name='WeatherData'></a>Weather Data
 
-#### Data Unions
+####  13.1.4. <a name='DataUnions'></a>Data Unions
 
